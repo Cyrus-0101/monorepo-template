@@ -1,3 +1,4 @@
+node_modules
 node_modules/
 .node_modules/
 built/*
@@ -64,3 +65,4 @@ package-lock.json
 /lib/
 dist
 .turbo
+bun.lockb

@@ -2,19 +2,19 @@
   "name": "monorepo-template",
   "private": true,
   "version": "1.0.0",
-  "author": "Brace Sproul",
+  "author": "Cyrus G",
   "license": "MIT",
   "workspaces": [
     "api",
     "web"
   ],
   "scripts": {
-    "start:api": "yarn turbo run start --filter=api",
-    "start:web": "yarn turbo run start --filter=web",
-    "build": "yarn turbo run build",
-    "lint": "yarn turbo run lint",
-    "format": "yarn turbo run format",
-    "dev": "yarn turbo run dev"
+    "start:api": "bun turbo run start --filter=api",
+    "start:web": "bun turbo run start --filter=web",
+    "build": "bun turbo run build",
+    "lint": "bun turbo run lint",
+    "format": "bun turbo run format",
+    "dev": "bun turbo run dev"
   },
   "devDependencies": {
     "turbo": "latest"
