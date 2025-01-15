@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/users.css" />
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net 'unsafe-eval';">
+    
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <!-- Body -->
+  <body>
+
+    <!-- Add Users -->
+    <div class="users-column add-user-col">
+      <div class="column-header">
+        Add User:
+      </div>
+      <div>
+        <input
+          id="name-input"
+          type="text"
+          class="form-control"
+          placeholder="Name"
+        />
+      </div>
+      <div>
+        <input
+          id="email-input"
+          type="email"
+          class="form-control"
+          placeholder="Email"
+        />
+      </div>
+      <div>
+        <button
+          id="add-user-btn"
+          class="btn btn-success"
+          o
+        >
+          Add
+        </button>
+      </div>
+    </div>
+
+    <!-- Display Users -->
+    <div class="users-column">
+      <div class="column-header">
+        Users:
+      </div>
+
+      <div id="all-users-anchor"></div>
+
+    </div>
+  </body>
+
+  <script src="scripts/http.js"></script>
+  <script src="scripts/users.js"></script>
+  <script src="scripts/users-template.js"></script>
+</html>
