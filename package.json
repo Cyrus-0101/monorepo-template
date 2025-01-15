@@ -8,6 +8,7 @@
     "api",
     "web"
   ],
+  "packageManager": "bun@1.1.43",
   "scripts": {
     "start:api": "bun turbo run start --filter=api",
     "start:web": "bun turbo run start --filter=web",
