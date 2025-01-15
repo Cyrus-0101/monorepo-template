@@ -3,12 +3,12 @@
 ## Development
 
 This monorepo uses Turborepo to manage the two packages (web, api).
-To build all packages run `yarn build` from root.
+To build all packages run `bun build` from root.
 
-To build a specific package run `yarn build --filter=<PACKAGE_NAME>`
+To build a specific package run `bun build --filter=<PACKAGE_NAME>`
 
-To start the API server run `yarn start:api`.
-Similarly, to start the web server run `yarn start:web`.
+To start the API server run `bun start:api`.
+Similarly, to start the web server run `bun start:web`.
 
 The API is an Express.js server written in TypeScript.
 It comes with out of the box support for Supabase.
